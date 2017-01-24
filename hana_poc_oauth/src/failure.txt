@@ -1,0 +1,14 @@
+{
+	"status":{
+		"HTTP" : 200,
+		"statusCode" : 1,
+		"message" : "Failed"
+	},
+	"details":{
+			"DetailsMessage" : "Invalid User Details",
+			"Full Name" : "Null",
+			"Last Name" : "Null",
+			"Mobile" : "Null"
+		
+	}
+}

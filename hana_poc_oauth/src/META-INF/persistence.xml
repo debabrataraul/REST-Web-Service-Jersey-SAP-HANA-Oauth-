@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence     http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<!-- oracle -->
+	<persistence-unit name="application" transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<class>com.incture.entity.EmployeeEntity</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+
+			<!-- Local -->
+			
+			<!-- <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:XE" />
+			<property name="javax.persistence.jdbc.user" value="incture" />
+			<property name="javax.persistence.jdbc.password" value="cherry@123" /> -->
+
+			<!-- SAP HANA Cloud -->
+
+			<property name="javax.persistence.jdbc.driver" value="com.sap.db.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:sap://10.117.96.130:30203/" />
+			<property name="javax.persistence.jdbc.user" value="SYSTEM" />
+			<property name="javax.persistence.jdbc.password" value="Cherry@123" /> 
+
+			<!-- EclipseLink should create the database schema automatically -->
+			<property name="eclipselink.ddl-generation" value="create-tables" />
+			
+		</properties>
+
+	</persistence-unit>
+
+</persistence>

@@ -1,0 +1,14 @@
+{
+	"status":{
+		"HTTP" : 200,
+		"statusCode" : 0,
+		"message" : "Success"
+	},
+	"details":{
+			"DetailsMessage" : "Authorized User /Login Validated",
+			"Full Name" : "FName",
+			"Last Name" : "LName",
+			"Mobile" : "MNo"
+		
+	}
+}
